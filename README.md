@@ -1,2 +1,3 @@
 # wayfarer
-App that allows users to  share tips about their favorite locations around the world.
+
+Frontend application that allows users to share tips about their favorite locations around the world.
