@@ -37,11 +37,10 @@ console.log("city info"+ this.city);
 
       
         // parse post index to into
+        
         const postId:string = this.postIndex || '';
 
-
-
-       // this.post = this.city.post[parseInt(postId)];
+       this.post = this.city.post[parseInt(postId)];
          
       console.log("Post info"+ this.city.post[parseInt(postId)]);
   

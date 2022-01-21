@@ -10,22 +10,25 @@ import { PostDetailsComponent } from './post-details/post-details.component';
 import { CityRoutingModule } from './city/city-routing.module';
 import { SearchComponent } from './search/search.component';
 import { HttpClientModule } from '@angular/common/http';
+import { HomepageComponent } from './homepage/homepage.component';
+import {IvyCarouselModule} from 'angular-responsive-carousel';
+
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     CityComponent,
+    HomepageComponent,
     PostComponent,
     PostDetailsComponent,
-    SearchComponent
+    SearchComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CityRoutingModule,
     HttpClientModule,
-  
-    
+    IvyCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

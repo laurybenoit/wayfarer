@@ -5,13 +5,14 @@ import { AppComponent } from './app.component';
 import { CityComponent } from './city/city.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { PostComponent } from './post/post.component';
+import { HomepageComponent } from './homepage/homepage.component';
 
 
 const routes: Routes = [
   {
     
     path: '',
-    component: NavbarComponent,
+    component: HomepageComponent,
     
   },
 
