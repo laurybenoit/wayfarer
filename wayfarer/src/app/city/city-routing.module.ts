@@ -6,20 +6,20 @@ import { PostDetailsComponent } from '../post-details/post-details.component';
 import { PostComponent } from '../post/post.component';
 import { CityComponent } from './city.component';
 
-const aboutRoutes: Routes = [
+const cityRoutes: Routes = [
   {
     
-        path:'cities/:id',
+        path:'cities/:cid',
         component: CityComponent,
-        children: [
-          {
-          path:"posts/",
-          component:PostComponent
-        },
-        {
-          path:"posts/id",
+        children: [{
+          path:"posts/:pid",
           component:PostDetailsComponent 
+        },
+          {
+          path:"posts",
+          component:PostComponent
         }
+        
           
         ]
       
@@ -28,7 +28,7 @@ const aboutRoutes: Routes = [
 
 @NgModule({
   imports: [
-    RouterModule.forChild(aboutRoutes)
+    RouterModule.forChild(cityRoutes)
   ],
   exports: [RouterModule]
 })

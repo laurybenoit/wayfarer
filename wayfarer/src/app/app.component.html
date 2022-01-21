@@ -4,9 +4,11 @@
     </div>
   <div class="side">
  <div *ngFor="let city of cities" class="sideElt"> 
-     
+     <div class= "">
+
+     </div>
          <a routerLink="/cities/{{ city.id }}">{{ city.city}}
-     <img class="img-responsive img-thumbnail navImg" src="{{city.image}}"  alt="" srcset="">
+     <img class="img-responsive img-thumbnail navImg" src="{{city.image}}"   alt="" srcset="">
     </a>
      </div>
  </div>

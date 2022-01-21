@@ -16,18 +16,19 @@ export class PostComponent implements OnInit {
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    console.log(this.cities);
-    
+  
+    console.log("Post: cities"+this.cities);
     this.route.paramMap.subscribe(param => {// deal with the id parameter
      
-      this.postIndex = param.get('id');
+      this.postIndex = param.get('pid');
   
       // find by index
       this.city = CITIES.find(j => {
-          const paramId:string = param.get('id') || '';
+          const paramId:string = param.get('cid') || '';
           return j.id === parseInt(paramId)
         }
       );
+      console.log("Post: city by id"+this.city);
   
         this.posts = this.city.posts;
   })

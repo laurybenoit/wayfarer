@@ -19,23 +19,23 @@ export class CityComponent implements OnInit {
 
   ngOnInit(): void {
     this.route.paramMap.subscribe(param => {// deal with the id parameter
-      console.log(param.get('id'));
+    
       this.cityIndex = param.get('id');
   
       // find by index
       this.city = CITIES.find(j => {
-          const paramId:string = param.get('id') || '';
+          const paramId:string = param.get('cid') || '';
           return j.id === parseInt(paramId)
         });
-        console.log("......city......"+this.city.city);
+        console.log("City Details: city"+this.city.id);
   // find weather data
        // listen to the event
     
-       this.searchService.createAPIObservable("41042")
-       .subscribe((response) => {
-         console.log(response);
-         this.weather = response;
-       });
+      //  this.searchService.createAPIObservable("41042")
+      //  .subscribe((response) => {
+      //    console.log(response);
+      //    this.weather = response;
+      //  });
       
   })
 
