@@ -4,19 +4,15 @@ import { AppComponent } from './app.component';
 import { CityComponent } from './city/city.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
-
 const routes: Routes = [
   {
-    
     path: '',
     component: NavbarComponent,
-    
   },
   {
-    path:'city',
-    component: CityComponent
-  }
-
+    path: 'cities/:id',
+    component: CityComponent,
+  },
 ];
 
 @NgModule({
