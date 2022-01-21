@@ -1,4 +1,10 @@
-
-<p>city works!</p>
-
-
+<h2>{{city.city}}</h2>
+<img class="img-responsive imgCity" src="{{city.image}}" alt="" srcset="">
+<br>
+<h2>Post</h2>
+<!-- <div *ngFor="let post of city.posts">
+    <a routerLink="/cities/{{ city.id }}/posts/{{ post.id }}" >Post</a>
+   <p>post is {{post.title}}</p>
+</div> -->
+<app-post routerLink="/cities/{{ city.id }}/posts/" ></app-post>
+<router-outlet></router-outlet>  

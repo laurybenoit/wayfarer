@@ -1,5 +1,19 @@
 <div class="container">
- <app-navbar></app-navbar>   
+    <div class="nav">
+       <app-navbar></app-navbar>   
+    </div>
+  <div class="side">
+ <div *ngFor="let city of cities" class="sideElt"> 
+     
+         <a routerLink="/cities/{{ city.id }}">{{ city.city}}
+     <img class="img-responsive img-thumbnail navImg" src="{{city.image}}"  alt="" srcset="">
+    </a>
+     </div>
+ </div>
+ <div class="main">
+   <router-outlet></router-outlet>  
+ </div>
+ 
 </div>
 
 

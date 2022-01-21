@@ -1,8 +1,10 @@
+import { PostDetailsComponent } from './post-details/post-details.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { CityComponent } from './city/city.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { PostComponent } from './post/post.component';
 
 
 const routes: Routes = [
@@ -12,10 +14,7 @@ const routes: Routes = [
     component: NavbarComponent,
     
   },
-  {
-    path:'city',
-    component: CityComponent
-  }
+
 
 ];
 
@@ -24,3 +23,4 @@ const routes: Routes = [
   exports: [RouterModule],
 })
 export class AppRoutingModule {}
+export const ArrayOfComponents = [PostDetailsComponent, PostComponent];
