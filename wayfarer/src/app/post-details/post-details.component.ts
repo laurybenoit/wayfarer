@@ -33,7 +33,7 @@ export class PostDetailsComponent implements OnInit {
           const paramId:string = param.get('cid') || '';
           return j.id === parseInt(paramId)
         });
-console.log("city info"+ this.city);
+       console.log("Post info ==> city info :"+ this.city);
 
       
         // parse post index to into

@@ -1,5 +1,14 @@
-<div>
-    <h3>{{post.title}}</h3>
-<p>{{post.post}}</p>
+<div class="row">
+    <div class="col-4">  
+   <h1>Cities</h1>
+   <app-side-bar></app-side-bar>
 </div>
+  <div class="col-8">
+<div>
+    <h1>{{post.title}}</h1>
+<p>{{post.post}}</p>
+<router-outlet></router-outlet>
+</div>
+</div>
+
 

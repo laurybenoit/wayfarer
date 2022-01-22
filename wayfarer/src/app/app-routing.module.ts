@@ -6,17 +6,36 @@ import { CityComponent } from './city/city.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { PostComponent } from './post/post.component';
 import { HomepageComponent } from './homepage/homepage.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
 const routes: Routes = [
+
   {
     
-    path: '',
+    path: '',pathMatch: 'full',
     component: HomepageComponent,
     
   },
-
-
+  {
+    path:'cities/:cid',
+    component: CityComponent,
+    children: [
+      {
+        path:"posts",
+        component:PostComponent
+      },
+      {
+        path:"posts/:pid",
+        component:PostDetailsComponent 
+      },
+      { 
+       path: '**',
+       component: PageNotFoundComponent
+       
+     },
+    ]
+}
 ];
 
 @NgModule({

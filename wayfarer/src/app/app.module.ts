@@ -7,11 +7,19 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { CityComponent } from './city/city.component';
 import { PostComponent } from './post/post.component';
 import { PostDetailsComponent } from './post-details/post-details.component';
-import { CityRoutingModule } from './city/city-routing.module';
+
+
 import { SearchComponent } from './search/search.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HomepageComponent } from './homepage/homepage.component';
-import {IvyCarouselModule} from 'angular-responsive-carousel';
+
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SlideComponent } from './slide/slide.component';
+import { SideBarComponent } from './side-bar/side-bar.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { TopicsComponent } from './topics/topics.component';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -22,13 +30,17 @@ import {IvyCarouselModule} from 'angular-responsive-carousel';
     PostComponent,
     PostDetailsComponent,
     SearchComponent,
+    SlideComponent,
+    SideBarComponent,
+    PageNotFoundComponent,
+    TopicsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CityRoutingModule,
     HttpClientModule,
-    IvyCarouselModule
+    NgbModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
