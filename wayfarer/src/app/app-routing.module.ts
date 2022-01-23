@@ -22,19 +22,15 @@ const routes: Routes = [
     path: 'cities/:cid',
     component: CityComponent,
     children: [
-      // {
-      //   path:"posts/:pid",
-      //   component:PostDetailsComponent
-      // },
       {
         path: 'posts',
         component: PostComponent,
       },
-      {
-        path: '**',
-        component: PageNotFoundComponent,
-      },
     ],
+  },
+  {
+    path: '**',
+    component: PageNotFoundComponent,
   },
 ];
 
