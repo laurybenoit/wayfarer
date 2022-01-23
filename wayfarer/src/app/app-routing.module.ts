@@ -22,12 +22,12 @@ const routes: Routes = [
     component: CityComponent,
     children: [
       {
-        path:"posts",
-        component:PostComponent
-      },
-      {
         path:"posts/:pid",
         component:PostDetailsComponent 
+      },
+      {
+        path:"posts",
+        component:PostComponent
       },
       { 
        path: '**',
