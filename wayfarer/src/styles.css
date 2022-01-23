@@ -80,16 +80,16 @@ label {
   color: white;
   border: none;
 }
-
+/* 
 .navImg{
-  width: 30%;
-}
+  width: 40%;
+} */
 
 .side{
   grid-area: s;
   display:flex;
   flex-direction: column;
-   
+  background-color: rgb(127, 225, 255)
 }
 .sideElt{
 padding: 10px;
