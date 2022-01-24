@@ -1,23 +1,23 @@
 .citybox{
-    background-color: rgb(196, 215, 255);
-    padding: 10px;
+    padding: 0 20px;
+    width: 90%;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+    border: solid 1px black;
+   border-radius: 20px;
+   height: 10vh;
 }
-.cityname{
-    position: relative;
-    font-size: 175%;
-    font-style: oblique;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    align-items: flex-start;
-    display: flex;
-}
-.citiesAndPic {
-    display: flex;
-}
+.cityname,
 .img-small{
-    width: 150px;
-    height: 150px;
-}
-.img-responsive{
-    width: 175px;
-    max-height: 175px;
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+ 
 }
