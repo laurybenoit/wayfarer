@@ -1,0 +1,23 @@
+.citybox{
+    background-color: rgb(196, 215, 255);
+    padding: 10px;
+}
+.cityname{
+    position: relative;
+    font-size: 175%;
+    font-style: oblique;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-items: flex-start;
+    display: flex;
+}
+.citiesAndPic {
+    display: flex;
+}
+.img-small{
+    width: 150px;
+    height: 150px;
+}
+.img-responsive{
+    width: 175px;
+    max-height: 175px;
+}

@@ -1,5 +1,6 @@
 <h1>Cities</h1>
-<div *ngFor="let city of cities" class="">
+<div *ngFor="let city of cities" class="citybox">
+    <div class="citiesAndPic">
     <div class="cityname">
         {{ city.city}}
     </div>
@@ -8,4 +9,5 @@
             <img class="img-responsive img-thumbnail navImg" src="{{city.image}}" alt="" srcset="">
         </a>
     </div>
+</div>
 </div>
