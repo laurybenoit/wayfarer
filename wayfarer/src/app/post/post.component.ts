@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { CITIES } from '../city/cities';
 
+
 @Component({
   selector: 'app-post',
   templateUrl: './post.component.html',

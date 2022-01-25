@@ -7,6 +7,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { PostComponent } from './post/post.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { AddpostComponent } from './addpost/addpost.component';
 
 const routes: Routes = [
   {
